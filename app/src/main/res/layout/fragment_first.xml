@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/plane_bg"
+    tools:context=".FirstFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_woman"
+        style="@style/firstFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/women_bg"
+        android:drawableTop="@drawable/ic_baseline_girl_24"
+        android:text="@string/woman"
+        app:layout_constraintBottom_toTopOf="@id/tv_baby"
+        app:layout_constraintEnd_toStartOf="@id/tv_man"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_man"
+        style="@style/firstFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/man_bg"
+        android:drawableTop="@drawable/ic_baseline_boy_24"
+        android:text="@string/man"
+        app:layout_constraintBottom_toTopOf="@id/tv_travel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_woman"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_baby"
+        style="@style/firstFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/baby_bg"
+        android:drawableTop="@drawable/ic_baseline_child_friendly_24"
+        android:text="@string/baby"
+        app:layout_constraintBottom_toTopOf="@id/tv_tech"
+        app:layout_constraintEnd_toStartOf="@id/tv_travel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_woman" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_travel"
+        style="@style/firstFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/plane_bg"
+        android:drawableTop="@drawable/ic_baseline_flight_takeoff_24"
+        android:text="@string/travel"
+        app:layout_constraintBottom_toTopOf="@+id/tv_foodDrink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_baby"
+        app:layout_constraintTop_toBottomOf="@id/tv_man" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tech"
+        style="@style/firstFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/phone_bg"
+        android:drawableTop="@drawable/ic_baseline_phonelink_setup_24"
+        android:text="@string/tech"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_foodDrink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_baby" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_foodDrink"
+        style="@style/firstFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/food_drink_bg"
+        android:drawableTop="@drawable/ic_baseline_fastfood_24"
+        android:text="@string/food_drink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tech"
+        app:layout_constraintTop_toBottomOf="@id/tv_travel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="woman">Woman</string>
+    <string name="man">Man</string>
+    <string name="baby">Baby</string>
+    <string name="travel">Travel</string>
+    <string name="tech">Tech</string>
+    <string name="food_drink"><![CDATA[Food&Drink]]></string>
+    <string name="btn_back">Back</string>
+    <string name="empty_field_hint">empty field</string>
+    <string name="logo_text_woman">WomanCompany</string>
+    <string name="slogan_text_woman">Woman Slogan</string>
+    <string name="motivation_text_woman">Woman Motivation text</string>
+    <string name="logo_text_man">ManCompany</string>
+    <string name="slogan_text_man">Man Slogan</string>
+    <string name="motivation_text_man">Man Motivation text</string>
+    <string name="logo_text_baby">BabyCompany</string>
+    <string name="slogan_text_baby">Baby Slogan</string>
+    <string name="motivation_text_baby">Baby Motivation text</string>
+    <string name="logo_text_travel">TravelCompany</string>
+    <string name="slogan_text_travel">Travel Slogan</string>
+    <string name="motivation_text_travel">Travel Motivation text</string>
+    <string name="logo_text_tech">TechCompany</string>
+    <string name="slogan_text_tech">Tech Slogan</string>
+    <string name="motivation_text_tech">Tech Motivation text</string>
+    <string name="logo_text_food_drink">FoodAndDrinkCompany</string>
+    <string name="slogan_text_food_drink">Food and Drink Slogan</string>
+    <string name="motivation_text_food_drink">Food and Drink Motivation text</string>
+</resources>
