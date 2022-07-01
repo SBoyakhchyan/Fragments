@@ -33,6 +33,7 @@
     <style name="second_fragment_texts1" parent="second_fragment_texts">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/dimen_30sp</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="second_fragment_texts2" parent="second_fragment_texts">
