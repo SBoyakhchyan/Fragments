@@ -3,14 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable-v24/second_view.xml" value="0.1975" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/a_style.xml" value="0.1975" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/action_bar.xml" value="0.1" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/btn_enabled.xml" value="0.1965" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/first_view.xml" value="0.1975" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/fisrt_view.xml" value="0.1965" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/ic_baseline_boy_24.xml" value="0.1835" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/ic_baseline_check_box_24.xml" value="0.1975" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/ic_baseline_girl_24.xml" value="0.1835" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/ic_baseline_mode_24.xml" value="0.1975" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1975" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/ic_baseline_phonelink_setup_24.xml" value="0.1835" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/instagram_background_color.xml" value="0.1975" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/login_btn_style.xml" value="0.1975" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/drawable/second_fragment_back_btn.xml" value="0.1835" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/font/aclonica.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/font/fonts.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/activity_main_exam.xml" value="0.25" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/class_layout.xml" value="0.25" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_first.xml" value="0.2" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_instagram_login_page.xml" value="0.25" />
+        <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_instagram_welcome_page.xml" value="0.25" />
         <entry key="..\:/Users/sboya/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_second.xml" value="0.25" />
       </map>
     </option>

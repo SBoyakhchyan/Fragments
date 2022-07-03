@@ -52,12 +52,59 @@ class SecondFragment : Fragment() {
     }
 
     private fun initList() {
-        list.add(Model(WOMAN_CATEGORY_KEY,"Woman","Woman are funny", WOMAN_IMAGE_URL,"Get Dressed all the time"))
-        list.add(Model(MAN_CATEGORY_KEY,"Man","Men are strong", MAN_IMAGE_URL,"Keep Go on"))
-        list.add(Model(BABY_CATEGORY_KEY,"Baby","Babies are cute", BABY_IMAGE_URL,"Be clever always"))
-        list.add(Model(TRAVEL_CATEGORY_KEY,"Travel","Travel all over the world", TRAVEL_IMAGE_URL,"Be in touch everywhere"))
-        list.add(Model(TECH_CATEGORY_KEY,"Tech","Smart things for you", TECH_IMAGE_URL,"Be smarter, get faster"))
-        list.add(Model(FOOD_AND_DRINK_CATEGORY_KEY,"Food and Drink","Tasty food and cool drinks", FOOD_DRINK_IMAGE_URL,"Take with you"))
+        list.add(
+            Model(
+                WOMAN_CATEGORY_KEY,
+                "Woman",
+                "Woman are funny",
+                WOMAN_IMAGE_URL,
+                "Get Dressed all the time"
+            )
+        )
+        list.add(
+            Model(
+                MAN_CATEGORY_KEY,
+            "Man",
+            "Men are strong",
+            MAN_IMAGE_URL,
+            "Keep Go on"))
+
+        list.add(
+            Model(
+                BABY_CATEGORY_KEY,
+                "Baby",
+                "Babies are cute",
+                BABY_IMAGE_URL,
+                "Be clever always"
+            )
+        )
+        list.add(
+            Model(
+                TRAVEL_CATEGORY_KEY,
+                "Travel",
+                "Travel all over the world",
+                TRAVEL_IMAGE_URL,
+                "Be in touch everywhere"
+            )
+        )
+        list.add(
+            Model(
+                TECH_CATEGORY_KEY,
+                "Tech",
+                "Smart things for you",
+                TECH_IMAGE_URL,
+                "Be smarter, get faster"
+            )
+        )
+        list.add(
+            Model(
+                FOOD_AND_DRINK_CATEGORY_KEY,
+                "Food and Drink",
+                "Tasty food and cool drinks",
+                FOOD_DRINK_IMAGE_URL,
+                "Take with you"
+            )
+        )
 
     }
 
@@ -66,10 +113,9 @@ class SecondFragment : Fragment() {
             if (category == it.category) {
                 Glide.with(requireContext())
                     .load(it.imageUrl)
-                    .override(480,480)
+                    .override(480, 480)
                     .centerCrop()
                     .into(logo_image)
-                //Glide.with(requireContext()).load(it.imageUrl).into(logo_image);
                 tv_company.text = it.title
                 tv_slogan.text = it.moto
                 tv_motivation.text = it.description

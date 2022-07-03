@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="fill_fields">
+        <item name="android:textSize">@dimen/dimen_25sp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:paddingEnd">@dimen/dimens_200</item>
+    </style>
+</resources>
