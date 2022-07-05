@@ -42,6 +42,8 @@ class InstagramLoginPageFragment : Fragment() {
             )
             ?.addToBackStack(BACKTO_SIGNIN_PAGE_TAG)
             ?.commit()
+        appUsername.setText("")
+        appPassword.setText("")
     }
 
     private fun fieldsCheck() {
