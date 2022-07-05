@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_instagram_welcome_page.*
 
+// TODO move it to Constants file
 private const val ARG_PARAM1 = "Username"
 
 
@@ -34,6 +35,7 @@ class InstagramWelcomePageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
             Toast.makeText(context, "You have been successfully longed in  $param1", Toast.LENGTH_SHORT).show()
 
+//  TODO use String.format
         welcome_dear.text = welcome_dear.text.toString() +" " + param1
     }
 

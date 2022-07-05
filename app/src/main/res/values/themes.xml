@@ -44,6 +44,7 @@
     <style name="instagram_logo_style">
 
         <item name="android:textColor">@color/white</item>
+        //TODO use resource
         <item name="android:textSize">35sp</item>
         <item name="fontFamily">@font/aclonica</item>
         <item name="android:layout_marginTop">150dp</item>
@@ -51,6 +52,7 @@
 
     <style name="fill_fields_tag">
         <item name="android:layout_marginTop">@dimen/dimens_10</item>
+        //TODO use resource
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/white</item>
 
@@ -58,6 +60,7 @@
 
     <style name="forgot_password" parent="fill_fields_tag">
         <item name="android:layout_marginTop">@dimen/dimens_10</item>
+        //TODO use resource
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
 

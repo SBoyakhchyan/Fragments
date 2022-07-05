@@ -7,7 +7,7 @@
     android:background="@drawable/instagram_background_color"
     tools:context=".InstagramWelcomePageFragment">
 
-
+<!--TODO use resource and style-->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/welcome_dear"
         android:layout_width="0dp"

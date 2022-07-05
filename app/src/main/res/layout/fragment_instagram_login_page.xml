@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_logo_text"
         style="@style/fill_fields_tag"/>
 
-
+<!--TODO android:layout_width="0dp"-->
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_username_field"
         android:layout_width="wrap_content"
@@ -63,6 +63,8 @@
         app:layout_constraintTop_toBottomOf="@id/et_username_field"
         style="@style/fill_fields_tag"/>
 
+<!--TODO ic_lock   -->
+<!--TODO android:layout_width="0dp"   -->
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_password_field"
         android:layout_width="wrap_content"
@@ -83,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintTop_toBottomOf="@id/et_password_field"
         style="@style/forgot_password"/>
-
+//TODO jisht@  android:layout_width="0dp" u padding backgroundi mej petq chi tal
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"

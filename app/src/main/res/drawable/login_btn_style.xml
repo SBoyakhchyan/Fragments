@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
+        <!-- TODO   only shape needed     -->
         <shape>
             <solid android:color="@color/button_background_color" />
+<!-- TODO no need padding, grel em xml i mej    -->
             <padding
                 android:left="@dimen/dimens_150"
                 android:top="@dimen/dimens_10"

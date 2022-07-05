@@ -18,6 +18,7 @@ private const val ARG_PARAM2 = "param2"
 class InstagramLoginPageFragment : Fragment() {
     private lateinit var appUsername: AppCompatEditText
     private lateinit var appPassword: AppCompatEditText
+// TODO created but not used, remove
     private lateinit var instagramWelcomePageFragment: InstagramWelcomePageFragment
     private var param1: String? = null
     private var param2: String? = null
@@ -48,6 +49,7 @@ class InstagramLoginPageFragment : Fragment() {
 
     }
 
+//    TODO remove it
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
@@ -60,6 +62,7 @@ class InstagramLoginPageFragment : Fragment() {
     }
 
     private fun addWelcomePageToActivity() {
+// TODO use Constants for tags
         activity?.supportFragmentManager?.beginTransaction()
             ?.replace(R.id.container_exam, InstagramWelcomePageFragment.newInstance(loginTemp), "first")
             ?.addToBackStack("first")
@@ -67,18 +70,21 @@ class InstagramLoginPageFragment : Fragment() {
     }
 
     private fun fieldsCheck() {
+//  TODO create initView function and move it there
         appUsername = requireView().findViewById(R.id.et_username_field)
         appPassword = requireView().findViewById(R.id.et_password_field)
         loginTemp = appUsername.text.toString()
         val passwordTemp = appPassword.text.toString()
         loginTemp.trim()
         passwordTemp.trim()
+//  TODO use string resource for "Username is not valid"
         if (loginTemp.isEmpty() || loginTemp.length < 7 || !loginTemp[0].isUpperCase()) {
             Snackbar.make(
                 requireActivity().findViewById(R.id.root_exam),
                 "Username is not valid",
                 Snackbar.LENGTH_SHORT
             ).show()
+//  TODO use string resource for "Password is not valid"
         } else if (passwordTemp.isEmpty() || passwordTemp.length < 7 || passwordTemp[0].isDigit()) {
             Snackbar.make(
                 requireActivity().findViewById(R.id.root_exam),
