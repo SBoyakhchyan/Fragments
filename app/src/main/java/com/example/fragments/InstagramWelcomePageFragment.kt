@@ -6,11 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.fragments.Constants.Companion.USERNAME_SET_KEY
 import kotlinx.android.synthetic.main.fragment_instagram_welcome_page.*
-
-// TODO move it to Constants file
-private const val ARG_PARAM1 = "Username"
-
 
 class InstagramWelcomePageFragment : Fragment() {
 
@@ -19,7 +16,7 @@ class InstagramWelcomePageFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
+            param1 = it.getString(USERNAME_SET_KEY)
         }
     }
 
@@ -45,7 +42,7 @@ class InstagramWelcomePageFragment : Fragment() {
         fun newInstance(username: String) =
             InstagramWelcomePageFragment().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, username)
+                    putString(USERNAME_SET_KEY, username)
                 }
             }
     }

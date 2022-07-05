@@ -27,13 +27,14 @@
     <string name="logo_text_food_drink">FoodAndDrinkCompany</string>
     <string name="slogan_text_food_drink">Food and Drink Slogan</string>
     <string name="motivation_text_food_drink">Food and Drink Motivation text</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="instgram_logo_text">Instgram</string>
+    <string name="instagram_logo_text">Instagram</string>
     <string name="username_hint">Username</string>
     <string name="password_text">Password</string>
     <string name="password_hint">Password</string>
     <string name="username_text">Username</string>
     <string name="log_in_btn">Log in</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="username_is_not_valid">Username is not valid</string>
+    <string name="password_is_not_valid">Password is not valid</string>
+    <string name="welcome_dear">Welcome dear</string>
 </resources>

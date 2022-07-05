@@ -27,7 +27,7 @@
         style="@style/instagram_logo_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/instgram_logo_text"
+        android:text="@string/instagram_logo_text"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +44,7 @@
 <!--TODO android:layout_width="0dp"-->
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_username_field"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
@@ -67,14 +67,14 @@
 <!--TODO android:layout_width="0dp"   -->
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_password_field"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="textWebPassword"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/tv_password"
         style="@style/fill_fields"
-        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableStart="@drawable/ic_lock_24"
         android:hint="@string/password_hint"/>
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -88,7 +88,7 @@
 //TODO jisht@  android:layout_width="0dp" u padding backgroundi mej petq chi tal
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/login_btn_style"
         android:text="@string/log_in_btn"

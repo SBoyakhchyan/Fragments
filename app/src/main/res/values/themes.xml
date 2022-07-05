@@ -45,15 +45,15 @@
 
         <item name="android:textColor">@color/white</item>
         //TODO use resource
-        <item name="android:textSize">35sp</item>
+        <item name="android:textSize">@dimen/dimens_35sp</item>
         <item name="fontFamily">@font/aclonica</item>
-        <item name="android:layout_marginTop">150dp</item>
+        <item name="android:layout_marginTop">@dimen/dimens_150</item>
     </style>
 
     <style name="fill_fields_tag">
         <item name="android:layout_marginTop">@dimen/dimens_10</item>
         //TODO use resource
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
         <item name="android:textColor">@color/white</item>
 
     </style>
@@ -61,8 +61,12 @@
     <style name="forgot_password" parent="fill_fields_tag">
         <item name="android:layout_marginTop">@dimen/dimens_10</item>
         //TODO use resource
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">@dimen/dimens_20sp</item>
         <item name="android:textColor">@color/white</item>
 
+    </style>
+    <style name="welcome_dear">
+        <item name="android:textSize">@dimen/dimens_20sp</item>
+        <item name="android:gravity">center</item>
     </style>
 </resources>
