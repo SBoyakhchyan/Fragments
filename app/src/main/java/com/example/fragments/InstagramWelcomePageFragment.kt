@@ -30,10 +30,10 @@ class InstagramWelcomePageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-            Toast.makeText(context, "You have been successfully longed in  $param1", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, String.format(getString(R.string.toast_text), param1), Toast.LENGTH_SHORT).show()
 
 //  TODO use String.format
-        welcome_dear.text = welcome_dear.text.toString() +" " + param1
+        welcome_dear.text = String.format(getString(R.string.welcome_dear, param1))
     }
 
 
