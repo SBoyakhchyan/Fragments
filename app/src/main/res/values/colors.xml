@@ -17,6 +17,7 @@
     <color name="background_start_color">#822889</color>
     <color name="background_end_color">#2F0D83</color>
     <color name="button_background_color">#5F1CA1</color>
+    <color name="password_label_red">#FF5252</color>
 
 
 </resources>

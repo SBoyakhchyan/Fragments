@@ -1,22 +1,24 @@
 package com.example.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatEditText
+import androidx.appcompat.widget.AppCompatTextView
+import androidx.fragment.app.Fragment
 import com.example.fragments.Constants.Companion.USERNAME_SET_KEY
-import kotlinx.android.synthetic.main.fragment_instagram_welcome_page.*
 
 class InstagramWelcomePageFragment : Fragment() {
+    private lateinit var welcomeDear: AppCompatTextView
 
-    private var param1: String? = null
+    private lateinit var username: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(USERNAME_SET_KEY)
+            username = it.getString(USERNAME_SET_KEY).toString()
         }
     }
 
@@ -30,10 +32,9 @@ class InstagramWelcomePageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-            Toast.makeText(context, String.format(getString(R.string.toast_text), param1), Toast.LENGTH_SHORT).show()
-
-//  TODO use String.format
-        welcome_dear.text = String.format(getString(R.string.welcome_dear, param1))
+        initView()
+        initToast(getString(R.string.toast_text))
+        setText(username)
     }
 
 
@@ -45,5 +46,17 @@ class InstagramWelcomePageFragment : Fragment() {
                     putString(USERNAME_SET_KEY, username)
                 }
             }
+    }
+
+    private fun initView() {
+        welcomeDear = requireView().findViewById(R.id.welcome_dear)
+    }
+
+    private fun initToast(message: String) {
+        Toast.makeText(context, String.format(message, username), Toast.LENGTH_SHORT).show()
+    }
+
+    private fun setText(username: String) {
+        welcomeDear.setText(String.format(getString(R.string.welcome_dear, username)))
     }
 }

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineStart"
+        app:layout_constraintGuide_begin="20dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineEnd"
+        app:layout_constraintGuide_end="20dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_firstText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="200dp"
+        android:text="Play \nrelaxing songs"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/first_view"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:textStyle="bold"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_Lorem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Lorem ipsum dolor sit amet"
+        android:layout_marginTop="95dp"
+        android:paddingStart="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_enabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="35dp"
+        android:textSize="18sp"
+        android:background="@drawable/btn_enabled"
+        android:text="Enabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_secondView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/second_view"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="HEADER \nSubhead"
+        android:textSize="17sp"
+        android:paddingVertical="35dp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_firstText"
+        android:paddingStart="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_secondView"
+        app:layout_constraintTop_toTopOf="@id/tv_secondView"
+        app:layout_constraintBottom_toBottomOf="@id/tv_secondView"
+        android:text="a"
+        android:textSize="30sp"
+        app:textAllCaps="true"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/a_style"/>
+
+    <View
+        android:id="@+id/view_checkbox"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:background="@drawable/first_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_secondView"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        android:layout_marginTop="40dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chb_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title List   +"
+        android:padding="10dp"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintStart_toStartOf="@id/view_checkbox"
+        app:layout_constraintTop_toTopOf="@id/view_checkbox"
+        />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item 1"
+        app:layout_constraintStart_toStartOf="@id/view_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/chb_text"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item 2"
+        app:layout_constraintStart_toStartOf="@id/view_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/chb_1"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item 3"
+        app:layout_constraintStart_toStartOf="@id/view_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/chb_2"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgv_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@id/view_checkbox"
+        android:src="@drawable/ic_baseline_mode_24"
+        android:padding="15dp"
+        android:background="@drawable/first_view"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chb_1_notext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/view_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/imgv_pen"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/dimen_25"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chb_2_notext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/view_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/chb_1_notext"
+        android:layout_marginStart="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/chb_1_notext"
+        app:layout_constraintTop_toTopOf="@id/chb_1_notext"/>
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radio_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/chb_2_notext"
+        app:layout_constraintTop_toBottomOf="@id/radio_1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_secondView"
+        app:layout_constraintTop_toTopOf="@id/tv_secondView"
+        app:layout_constraintBottom_toBottomOf="@id/tv_secondView"
+        android:src="@drawable/ic_baseline_check_box_24"
+        android:padding="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

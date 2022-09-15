@@ -32,50 +32,53 @@
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_username"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_username"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/username_text"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/tv_logo_text"
-        style="@style/fill_fields_tag"/>
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        style="@style/fill_fields_tag"
 
-<!--TODO android:layout_width="0dp"-->
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/et_username_field"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:theme="@style/fill_fields_tag">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_person_24"
+            android:hint="@string/username_text"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/input_username"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@id/tv_username"
-        style="@style/fill_fields"
-        android:hint="@string/username_hint"
-        android:drawableStart="@drawable/ic_baseline_person_outline_24"/>
+        style="@style/fill_fields_tag_pass"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/password_label_red"
+        app:theme="@style/fill_fields_tag_pass">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/password_text"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@id/et_username_field"
-        style="@style/fill_fields_tag"/>
-
-<!--TODO ic_lock   -->
-<!--TODO android:layout_width="0dp"   -->
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/et_password_field"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:inputType="textWebPassword"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@id/tv_password"
-        style="@style/fill_fields"
-        android:drawableStart="@drawable/ic_lock_24"
-        android:hint="@string/password_hint"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_lock_24"
+            android:hint="@string/password_text"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/forgot_password"
@@ -83,9 +86,9 @@
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintTop_toBottomOf="@id/et_password_field"
+        app:layout_constraintTop_toBottomOf="@id/input_password"
         style="@style/forgot_password"/>
-//TODO jisht@  android:layout_width="0dp" u padding backgroundi mej petq chi tal
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:layout_width="0dp"
@@ -96,6 +99,7 @@
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/forgot_password"
         android:layout_marginTop="@dimen/dimens_50"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

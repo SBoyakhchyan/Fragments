@@ -50,11 +50,25 @@
         <item name="android:layout_marginTop">@dimen/dimens_150</item>
     </style>
 
-    <style name="fill_fields_tag">
+    <style name="fill_fields_tag" parent="Widget.Design.TextInputLayout">
         <item name="android:layout_marginTop">@dimen/dimens_10</item>
-        //TODO use resource
-        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textSize">@dimen/dimen_25sp</item>
         <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:labelTextSize">@dimen/dimens_35sp</item>
+
+        <item name="android:lines">1</item>
+
+    </style>
+
+    <style name="fill_fields_tag_pass" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_marginTop">@dimen/dimens_10</item>
+        <item name="android:textSize">@dimen/dimen_25sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">@color/password_label_red</item>
+        <item name="android:labelTextSize">@dimen/dimens_35sp</item>
+
+        <item name="android:lines">1</item>
 
     </style>
 
